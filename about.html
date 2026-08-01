@@ -1,0 +1,115 @@
+ html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Meለካ Converter</title>
+<meta name="description" content="About the Meለካ unit and currency converter — why it exists and how it works.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #211815;
+    --panel: #2b201b;
+    --panel-2: #352822;
+    --line: #4a382f;
+    --cream: #f2e9dc;
+    --cream-dim: #cbbca8;
+    --gold: #d9a441;
+    --gold-dim: #a67b31;
+    --radius: 14px;
+    --shadow: 0 12px 30px rgba(0,0,0,0.35);
+  }
+  *{ box-sizing: border-box; }
+  body{
+    margin:0;
+    background:
+      radial-gradient(circle at 15% 0%, rgba(217,164,65,0.08), transparent 45%),
+      radial-gradient(circle at 100% 20%, rgba(60,122,87,0.10), transparent 40%),
+      var(--bg);
+    color: var(--cream);
+    font-family: "Work Sans", sans-serif;
+    min-height: 100vh;
+    padding: 0 0 60px;
+  }
+  header{ padding: 46px 24px 10px; text-align: center; }
+  .eyebrow{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--gold); margin: 0 0 14px;
+  }
+  h1{
+    font-family: "Fraunces", serif; font-weight: 600;
+    font-size: clamp(2rem, 5vw, 2.8rem); margin: 0 0 10px; letter-spacing: -0.01em;
+  }
+  h1 span{ color: var(--gold); font-style: italic; font-weight: 500; }
+  nav{ text-align:center; margin: 18px 0 10px; }
+  nav a{
+    color: var(--cream-dim); text-decoration: none; font-size: 14px;
+    margin: 0 12px; border-bottom: 1px solid transparent; padding-bottom: 2px;
+    transition: color .15s ease, border-color .15s ease;
+  }
+  nav a:hover, nav a.active{ color: var(--gold); border-color: var(--gold); }
+
+  main{ max-width: 640px; margin: 0 auto; padding: 20px 24px 0; }
+  .card{
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: 30px; box-shadow: var(--shadow);
+  }
+  h2{
+    font-family: "Fraunces", serif; font-weight: 600; color: var(--gold);
+    font-size: 1.3rem; margin: 28px 0 10px;
+  }
+  h2:first-child{ margin-top: 0; }
+  p{ line-height: 1.7; color: var(--cream); margin: 0 0 14px; font-size: 15px; }
+  ul{ margin: 0 0 14px; padding-left: 20px; color: var(--cream); line-height: 1.7; font-size: 15px; }
+
+  footer{
+    text-align:center; margin-top: 50px; color: var(--cream-dim);
+    font-size: 13px; padding: 0 20px;
+  }
+  footer a{ color: var(--gold); text-decoration:none; }
+</style>
+</head>
+<body>
+
+<header>
+  <p class="eyebrow">about</p>
+  <h1>Me<span>ለካ</span></h1>
+</header>
+
+<nav>
+  <a href="index.html">Converter</a>
+  <a href="about.html" class="active">About</a>
+  <a href="privacy.html">Privacy</a>
+</nav>
+
+<main>
+  <div class="card">
+    <h2>Why this exists</h2>
+    <p>Meለካ is a small, free converter built to make everyday conversions — length, weight, temperature, speed, and Ethiopian Birr exchange — quick and clutter-free. No account, no sign-up, no app to install. Type a number, get an answer.</p>
+
+    <h2>What it converts</h2>
+    <ul>
+      <li>Length: millimeters through miles</li>
+      <li>Weight: milligrams through metric tons</li>
+      <li>Temperature: Celsius, Fahrenheit, Kelvin</li>
+      <li>Speed: m/s, km/h, mph, knots</li>
+      <li>Currency: Ethiopian Birr against USD, EUR, and GBP, using live exchange rates</li>
+    </ul>
+
+    <h2>How the currency rates work</h2>
+    <p>The Birr converter pulls live exchange rate data each time you open that tab. If a live rate can't be fetched — for example, if you're offline — the page falls back to an approximate rate so it still gives you a usable answer.</p>
+
+    <h2>Who built it</h2>
+    <p>Meለካ is an independent project built and maintained by its creator, hosted for free on GitHub Pages.</p>
+  </div>
+</main>
+
+<footer>
+  ገንብቷል በ Birtukuan · <a href="index.html">Back to converter</a>
+</footer>
+
+</body>
+</html>   
